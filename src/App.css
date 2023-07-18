@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#divStyle{
+    width: auto;
+    height: 25px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 30px;
+}
