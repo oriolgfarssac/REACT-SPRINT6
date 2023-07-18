@@ -1,9 +1,9 @@
 import React from 'react';
 
-interface TextTestProps {
+interface TextProps {
   content: string;
 }
 
-const TextTest: React.FC<TextTestProps> = (props) => <div id='divStyle'><p>{props.content}</p></div>;
+const TextTest: React.FC<TextProps> = (props) => <div><p>{props.content}</p></div>;
 
-export default TextTest;
+export { TextTest, };
