@@ -1,4 +1,4 @@
-import { Container, DivStyle, ButtonStyle, DivGeneral, DivInital, FirstButton, FirstTitle, FirstText, FotoImg } from './style';
+import { Container, DivStyle, ButtonStyle, DivGeneral, DivInital, FirstButton, FirstTitle, FirstText,} from './style';
 import { TextTest, } from './Escena/Escena';
 import arrayFrases from './Frases';
 import { useState } from 'react';
