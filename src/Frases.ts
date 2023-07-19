@@ -1,6 +1,6 @@
 const arrayFrases = [
     {
-        frase:"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
+        frase:"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial.",
         foto: './src/img/1.jpg',
     },
     {
@@ -8,11 +8,11 @@ const arrayFrases = [
         foto: './src/img/2.jpg',
     },
     {
-        frase:"L'heroi va decidir travessar la porta que el portava a casa",
+        frase:"L'heroi va decidir travessar la porta que el portava a casa.",
         foto: './src/img/3.jpg',
     },
     {
-        frase:"Mentrestant, altres herois no van tenir tanta sort en la seva elecció ...",
+        frase:"Mentrestant, altres herois no van tenir tanta sort en la seva elecció...",
         foto: './src/img/4.jpg',
     },   
 ]
