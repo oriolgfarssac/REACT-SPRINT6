@@ -15,6 +15,10 @@ const DivStyle = styled.div`
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   border: solid 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
 `;
 
 const ButtonStyle = styled.button`
