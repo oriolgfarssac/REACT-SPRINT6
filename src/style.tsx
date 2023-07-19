@@ -9,12 +9,13 @@ const Container = styled.div`
 `;
 
 const DivStyle = styled.div`
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
   margin-top: 25px;
   width: 750px;
   height: 50px;
   background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  border: solid 3px black;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +23,20 @@ const DivStyle = styled.div`
 `;
 
 const ButtonStyle = styled.button`
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
   font-size: 20px;
   margin-left: 30px;
-  background-color: white;
-  border: solid 2px black;
-  border-radius: 30px;
+  background-color: rgb(211, 233, 255);
+  border-radius: 5px;
+  border: none;
 
   &:hover {
-    background-color: rgba(219, 86, 86, 0.663);
+    background-color: rgb(219, 86, 86);
   }
 
   &:active {
-    background-color: rgba(219, 86, 86, 0.785);
+    background-color: rgb(219, 86, 86);
   }
 `;
 
@@ -62,22 +65,24 @@ const FirstButton = styled.button`
 font-size: 15px;
 text-align: center;
 background-color: white;
-border: solid 2px black;
-border-radius: 30px;
+border: none;
+border-radius: 5px;
 width: 175px;
 height: 30px;
 
 &:hover{
-  background-color: rgba(249, 109, 109, 0.785);
+  background-color: rgb(249, 109, 109);
 }
 
 &:active{
-  background-color:rgba(219, 86, 86, 0.785);
+  background-color:rgb(219, 86, 86);
 ;
 }
 `;
 
 const FirstTitle = styled.h2`
+font-family: 'Times New Roman', Times, serif;
+font-weight: 500;
 font-size: 25px;
 justify-content: center;
 align-items: center;
@@ -86,6 +91,8 @@ height: 30px;
 `;
 
 const FirstText = styled.h5`
+font-family: 'Times New Roman', Times, serif;
+font-weight: 500;
 margin-top: -10px;
 margin-bottom: 40px;
 text-align: center;
@@ -98,5 +105,11 @@ width: 300px;
 word-wrap: normal;
 `;
 
-export { Container, DivStyle, ButtonStyle, DivGeneral, DivInital, FirstButton, FirstTitle, FirstText};
+const FotoImg = styled.image`
+width: 100%;
+height: 100%;
+`;
+
+
+export { Container, DivStyle, ButtonStyle, DivGeneral, DivInital, FirstButton, FirstTitle, FirstText, FotoImg};
 

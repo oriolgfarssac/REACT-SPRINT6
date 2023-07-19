@@ -6,4 +6,4 @@ interface TextProps {
 
 const TextTest: React.FC<TextProps> = (props) => <div>{props.content}</div>;
 
-export { TextTest, };
+export { TextTest,};

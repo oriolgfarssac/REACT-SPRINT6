@@ -1,14 +1,19 @@
-import { Container, DivStyle, ButtonStyle, DivGeneral, DivInital, FirstButton, FirstTitle, FirstText} from './style';
-import { TextTest } from './Escena/Escena';
+import { Container, DivStyle, ButtonStyle, DivGeneral, DivInital, FirstButton, FirstTitle, FirstText, FotoImg } from './style';
+import { TextTest, } from './Escena/Escena';
 import arrayFrases from './Frases';
 import { useState } from 'react';
 
+export let index2: number = 0;
+
 function App() {
+
   const [condition, setCondition] = useState(false);
 
   const [condition2, setCondition2] = useState(true);
 
   const [index, setIndex] = useState(0);
+
+  
 
   const changeCondition = () =>{
     setCondition(true);
@@ -17,10 +22,12 @@ function App() {
 
   const previousItem = () => {
     setIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+    index2 = index;
   };
 
   const nextItem = () => {
     setIndex((prevIndex) => Math.min(prevIndex + 1, arrayFrases.length - 1));
+    index2= index;
   };
 
   return (
@@ -36,17 +43,13 @@ function App() {
       <Container>
         <DivGeneral>
           <div id='divGeneral'>
+            <img src={arrayFrases[index].foto} id='fondo'/>
             <ButtonStyle onClick={previousItem}> ← Anterior </ButtonStyle>
             <ButtonStyle onClick={nextItem}> Seguent → </ButtonStyle>
             {arrayFrases.map((frase, i) => (
-              <DivStyle
-                key={i}
-                style={{
-                  backgroundColor: index === i ? 'rgba(219, 86, 86, 0.663)' : 'white',
-                }}
-              >
-                <TextTest content={frase} />
-              </DivStyle>
+              <DivStyle key={i} style={{backgroundColor: index === i ? 'rgb(249, 108, 108)' : 'rgb(233, 244, 255)',}}>
+                <TextTest content={frase.frase}/>
+              </DivStyle> 
             ))}
           </div>
         </DivGeneral>
@@ -55,4 +58,5 @@ function App() {
     </>
     );
 }
+
 export default App;
