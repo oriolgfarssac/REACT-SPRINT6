@@ -15,7 +15,7 @@ const DivStyle = styled.div`
   width: 750px;
   height: 50px;
   background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;

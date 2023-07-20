@@ -39,10 +39,10 @@ function App() {
       <FirstButton onClick={changeCondition}>Veure Historia</FirstButton>
       </DivInital>
     }
-    {condition && ( // Renderizado condicional basado en la condición
+    {condition && (
       <Container>
         <DivGeneral>
-          <div id='divGeneral'>
+          <div>
             <img src={arrayFrases[index].foto} id='fondo'/>
             <ButtonStyle onClick={previousItem}> ← Anterior </ButtonStyle>
             <ButtonStyle onClick={nextItem}> Seguent → </ButtonStyle>
